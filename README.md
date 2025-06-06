@@ -4,12 +4,12 @@ This is a WhatsApp bot built using the Baileys library for group management, inc
 
 <div align="center"> 
   <a href="https://git.io/typing-svg"> 
-    <img src="https://readme-typing-svg.demolab.com?font=Ribeye&size=50&pause=1000&color=33ff00&center=true&width=910&height=100&lines=Knight-Bot;Multi+Device+Whatsapp+Bot;Coded+By+Caleb" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=Ribeye&size=50&pause=1000&color=33ff00&center=true&width=910&height=100&lines=K4l3b-Bot;Multi+Device+Whatsapp+Bot;Coded+By+Caleb" alt="Typing SVG" />
   </a> 
 </div> 
 
 <div align="center"> 
-  <a href="https://youtube.com/@mr_unique_hacker"> 
+  <a href="https://youtube.com/@calebosky"> 
     <img src="https://github.com/CalebDevX/K4l3bBot/blob/main/assets/bot_image.jpg" alt="K4l3b Bot" height="300"> 
   </a> 
 </div>

@@ -10,7 +10,7 @@ This is a WhatsApp bot built using the Baileys library for group management, inc
 
 <div align="center"> 
   <a href="https://youtube.com/@mr_unique_hacker"> 
-    <img src="https://github.com/CalebDevX/K4l3b-Bot/blob/main/assets/bot_image.jpg" alt="K4l3b Bot" height="300"> 
+    <img src="https://github.com/CalebDevX/K4l3bBot/blob/main/assets/bot_image.jpg" alt="K4l3b Bot" height="300"> 
   </a> 
 </div>
 
@@ -23,7 +23,7 @@ This is a WhatsApp bot built using the Baileys library for group management, inc
 Click the button below to fork the Knight Bot repository to your GitHub account:
 
 <div align="center">
-  <a href="https://github.com/CalebDevX/K4l3b-Bot/fork">
+  <a href="https://github.com/CalebDevX/K4l3bBot/fork">
     <img src="https://img.shields.io/badge/Fork-Repository-blue?style=for-the-badge" alt="Fork the repository"/>
   </a>
 </div>
@@ -59,7 +59,7 @@ For further customization and setup guidance, click the button below:
   <a href="https://youtu.be/dDyiEHF8rIQ">
     <img src="https://img.shields.io/badge/Deploy Tutorial-dc3545?style=for-the-badge&logo=youtube" alt="YouTube Link"/>
   </a>
-  <a href="https://bot-hosting.net/?aff=1068419752923508776">
+  <a href="https://bot-hosting.net/?aff=1284374655272222742">
     <img src="https://img.shields.io/badge/Deploy on Panel-28a745?style=for-the-badge" alt="Deploy on Panel"/>
   </a>
 </div>

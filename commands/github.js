@@ -1,8 +1,8 @@
 async function githubCommand(sock, chatId) {
-    const repoInfo = `*🤖 KnightBot MD*
+    const repoInfo = `*🤖 K4l3bBot MD*
 
 *📂 GitHub Repository:*
-https://github.com/CalebDevX/K4l3b-Bot
+https://github.com/CalebDevX/K4l3bBot
 
 *📢 Official Channel:*
 https://youtube.com/@calebosky

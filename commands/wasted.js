@@ -3,7 +3,7 @@ const { channelInfo } = require('../lib/messageConfig');
 
 async function wastedCommand(sock, chatId, message) {
     let userToWaste;
-    
+
     // Check for mentioned users
     if (message.message?.extendedTextMessage?.contextInfo?.mentionedJid?.length > 0) {
         userToWaste = message.message.extendedTextMessage.contextInfo.mentionedJid[0];
@@ -12,11 +12,11 @@ async function wastedCommand(sock, chatId, message) {
     else if (message.message?.extendedTextMessage?.contextInfo?.participant) {
         userToWaste = message.message.extendedTextMessage.contextInfo.participant;
     }
-    
+
     if (!userToWaste) {
-        await sock.sendMessage(chatId, { 
-            text: 'Please mention someone or reply to their message to waste them!', 
-            ...channelInfo 
+        await sock.sendMessage(chatId, {
+            text: 'Please mention someone or reply to their message to waste them!',
+            ...channelInfo
         });
         return;
     }
@@ -30,15 +30,15 @@ async function wastedCommand(sock, chatId, message) {
             profilePic = 'https://i.imgur.com/2wzGhpF.jpeg'; // Default image if no profile pic
         }
 
-        // Get the wasted effect image
-        const wastedResponse = await axios.get(
-            `https://some-random-api.com/canvas/overlay/wasted?avatar=${encodeURIComponent(profilePic)}`,
+        // Generate wasted effect using FlamingText
+        const flamingTextResponse = await axios.get(
+            `https://flamingtext.com/net-fu/proxy_form.cgi?script=wasted-logo&text=WASTED&imageoutput=true`,
             { responseType: 'arraybuffer' }
         );
 
         // Send the wasted image
         await sock.sendMessage(chatId, {
-            image: Buffer.from(wastedResponse.data),
+            image: Buffer.from(flamingTextResponse.data),
             caption: `⚰️ *Wasted* : ${userToWaste.split('@')[0]} 💀\n\nRest in pieces!`,
             mentions: [userToWaste],
             ...channelInfo
@@ -46,11 +46,11 @@ async function wastedCommand(sock, chatId, message) {
 
     } catch (error) {
         console.error('Error in wasted command:', error);
-        await sock.sendMessage(chatId, { 
+        await sock.sendMessage(chatId, {
             text: 'Failed to create wasted image! Try again later.',
-            ...channelInfo 
+            ...channelInfo
         });
     }
 }
 
-module.exports = wastedCommand; 
+module.exports = wastedCommand;

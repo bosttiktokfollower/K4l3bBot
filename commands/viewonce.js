@@ -9,8 +9,8 @@ const channelInfo = {
         forwardingScore: 1,
         isForwarded: true,
         forwardedNewsletterMessageInfo: {
-            newsletterJid: '120363161513685998@newsletter',
-            newsletterName: 'KnightBot MD',
+            newsletterJid: '120363402198872825@newsletter',
+            newsletterName: 'K4l3bBot MD',
             serverMessageId: -1
         }
     }
@@ -75,7 +75,7 @@ async function viewOnceCommand(sock, chatId, message) {
                 
                 await sock.sendMessage(chatId, { 
                     image: buffer,
-                    caption: `*💀 KnightBot Anti ViewOnce 💀*\n\n*Type:* Image 📸\n${caption ? `*Caption:* ${caption}` : ''}`,
+                    caption: `*💀 K4l3bBot Anti ViewOnce 💀*\n\n*Type:* Image 📸\n${caption ? `*Caption:* ${caption}` : ''}`,
                     ...channelInfo
                 });
                 console.log('✅ View once image processed successfully');
@@ -117,7 +117,7 @@ async function viewOnceCommand(sock, chatId, message) {
 
                 await sock.sendMessage(chatId, { 
                     video: fs.readFileSync(tempFile),
-                    caption: `*💀 KnightBot Anti ViewOnce 💀*\n\n*Type:* Video 📹\n${caption ? `*Caption:* ${caption}` : ''}`,
+                    caption: `*💀 K4l3Bot Anti ViewOnce 💀*\n\n*Type:* Video 📹\n${caption ? `*Caption:* ${caption}` : ''}`,
                     ...channelInfo
                 });
 
